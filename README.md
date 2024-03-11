@@ -17,11 +17,11 @@ key:value
 shawan
 hash
 --------------------------------------------------------
-Total: 40 (character's)                                |
-first two key(directory)                               |
-rest 38 are the binary large object jibrish value(blob)|
-                                                       |
-these becomes key:value pairs                          |
+Total: 40 (character's)                                 |
+first two key(directory)                                |
+rest 38 are the binary large object jibrish value(blob) |
+                                                        |
+these becomes key:value pairs                           |
 --------------------------------------------------------
 for seeing these cause cat command will make visible
 the blob that is not readable to humans
