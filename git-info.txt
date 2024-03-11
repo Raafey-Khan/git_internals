@@ -1,0 +1,72 @@
+
+
+
+Git uses git has a data structure called as
+
+                   Tree
+
+But in these case it is a Directed-Tree
+
+     Directed-Graph    
+
+
+and what it does
+
+
+. it contains pointers using the hashes like it will
+
+. store the hashes and use the hashes as pointers
+
+. to store blobs (inside you'll be have details about the file)
+. it can store trees also
+
+
+# It has MetaData about
+
+the type of pointers
+two type of pointers
+1 for blobs 1 for the trees
+
+type of pointer (tree,blob)
+
+--> directory name or file name
+
+--> mode 
+
+tree object look like
+
+--------------------
+|tree    |  <size>  |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+|        |          |
+ ------------------
+
+in sense
+there are some tree objects
+which ponts to other tree objects
+it then points to blob objects
+
+intertrees which are refred are subtrees
+
+all of these are directed graph
+
+All starts when you do git add <file name>
+
+it creates a blob and tree pointing to it
+
+directed tree
+
+
+# To Manages Directories Git Manages a Structured Called as Trees
+
+SO inside Directory, you can have sub-directory inside sub-directory
+you have files
+
+when you do git add
+it create a tree object 
+inside it can point to blobs technically files and it can point to trees
+which are technically other directories-
