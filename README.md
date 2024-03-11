@@ -29,3 +29,13 @@ so git provides their own command for this
 
 called git cat-file -p <two-digit-key> <38value>
 git cat-file -p 7882f86e79f1b94eb350714b82ed5e1d83df64ea
+
+commit's are unique because they comes in different
+timestamp
+so even if your writing the same commit -m 
+it still assigns it to a different sha-1 hash
+
+
+after a first commit whatever commit will be done
+are also points to the parent commit and their parent id
+that's how detailed-tree works.
