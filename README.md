@@ -9,7 +9,7 @@ object directory
 i just checkedout, that when i do git adds
 it's stores in the object folder
 and in the object folder the first 2 letter's 
-are the KEY and the other id's are Value
+are the KEY and the other id's are Value.
 
 key:value
 01: 2224423245232111221
