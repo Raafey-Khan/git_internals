@@ -1,0 +1,35 @@
+When you run git gc, it stands for "garbage collection" in Git. It's a maintenance command that cleans up unnecessary files and optimizes the local repository. Here's what it does:
+
+Packing Objects: Git stores objects (files, directories, commits, etc.) in its database. Over time, as you make changes, Git creates new objects. When you run git gc, Git will consolidate these objects into packfiles. Packfiles are more efficient in terms of storage and access speed.
+
+Pruning Unreachable Objects: Git uses a mechanism called "reachability" to determine which objects are still in use. Objects that are no longer reachable, such as old commits, branches, or files that have been deleted or changed, are considered garbage. git gc removes these unreachable objects, freeing up disk space.
+
+Optimizing Storage: Git sometimes leaves behind loose objects, which are files that aren't part of a packfile. git gc can consolidate these loose objects into packfiles, making storage more efficient.
+
+When you push something to a remote repository, Git might perform similar operations in the background. It could be packing objects, compressing data, or optimizing storage to reduce the amount of data being transferred over the network.
+
+
+we can do packing using git gc(garbage collector)
+. Compressing the objects
+. Free up disk space (Good Optimization Technique)
+
+after git gc
+you checked
+'tree .git': you'll get a pack folder with .pack and index files
+
+if you don't do git gc , git manuallly does this Optimization
+
+# To Open up the pack files of which we were very much exited off to learn
+
+is 
+
+`git verify-pack -v .git/objects/pack/pack-id.pack
+and boom all set you can see things are in the pack file
+things like 
+what are visible before garbage collection
+
+. blob
+. tree 
+. commit
+
+Ps. I love git

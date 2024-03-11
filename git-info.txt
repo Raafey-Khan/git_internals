@@ -70,3 +70,28 @@ when you do git add
 it create a tree object 
 inside it can point to blobs technically files and it can point to trees
 which are technically other directories-
+
+
+so like you created your git-repo , and you commit alot 
+. there will be too many commit objects
+..shortage of size consumption should not happen 
+thats why git need to freeup some hashes
+
+Optimization from git
+
+.) During Garbage Collection(it will try to do garbage collection)
+-- it will try to compress multiple objects into a pack file
+and then store it
+instead of storing them seperately
+
+The moment you pushed something to the remote location connected to a repo on the gh server
+
+. That time
+Delta compression 
+and pack file creation happens
+on the github
+
+objects directories proves that when ever you do new change
+there will be new hashes that will be created
+
+same piece of data == same hash
