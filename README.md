@@ -4,7 +4,7 @@ The moment you added README.md
 git created a 40 digit hexadecimal shavan hash
 the first two hash becomes the folder of 
 which it contains the file the a directory in the 
-object directory
+object directory.
 
 i just checkedout, that when i do git adds
 it's stores in the object folder
