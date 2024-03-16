@@ -30,7 +30,7 @@ so git provides their own command for this
 called git cat-file -p <two-digit-key> <38value>
 git cat-file -p 7882f86e79f1b94eb350714b82ed5e1d83df64ea
 <<<<<<< HEAD
-=======
+========
 
 commit's are unique because they comes in different
 timestamp
