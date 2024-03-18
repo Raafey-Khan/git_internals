@@ -8,7 +8,6 @@ Optimizing Storage: Git sometimes leaves behind loose objects, which are files t
 
 When you push something to a remote repository, Git might perform similar operations in the background. It could be packing objects, compressing data, or optimizing storage to reduce the amount of data being transferred over the network.
 
-
 we can do packing using git gc(garbage collector)
 . Compressing the objects
 . Free up disk space (Good Optimization Technique)
